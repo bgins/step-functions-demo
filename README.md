@@ -16,7 +16,7 @@ The application will be deployed by CDK using your `default` profile and associa
 
 The step function is comprised of a DynamoDB table and several lambda functions. The state machine looks like:
 
-![Step functions demo](step-functions-demo.png).
+![Step functions demo](step-functions-demo.png)
 
 ### Score table
 
