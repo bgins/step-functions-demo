@@ -34,7 +34,7 @@ exports.handler = async () => {
         const resetTwoScoreParams = getUpdateParams('two');
         dynamodb.updateItem(resetTwoScoreParams, (err: any, data: any) => {
           if (err) { reject(err); }
-          resolve("Scoreboard initialized");
+          resolve(null);
         });
       }
     });

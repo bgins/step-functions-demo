@@ -61,8 +61,7 @@ export class LuckyNumber extends cdk.Stack {
     /* STEP FUNCTION */
 
     const newGame = new tasks.LambdaInvoke(this, 'NewGame', {
-      lambdaFunction: newGameLambda,
-      outputPath: '$.Payload'
+      lambdaFunction: newGameLambda
     });
 
     const draw = new tasks.LambdaInvoke(this, 'Draw', {
